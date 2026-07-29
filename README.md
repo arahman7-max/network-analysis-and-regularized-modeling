@@ -1,77 +1,128 @@
-# Statistical Modeling and Network Analysis
+# Financial Network and Regularized Modeling
 
 ## Overview
 
-This repository contains an academic statistical analysis project applying network analysis and regularized regression methods using R.
+This repository contains an academic data analysis project applying network analysis and machine learning methods to financial and mortgage lending data.
 
-The project explores relationships within network structures and applies statistical modeling techniques to identify important predictors while addressing issues such as model complexity and variable selection.
+The project explores two major areas:
 
-This project demonstrates applications of network science, regression modeling, and machine learning techniques through R programming.
+1. Financial network analysis examining influence, centrality, brokerage, and community structure within weighted and unweighted financial networks.
+
+2. Mortgage lending analysis comparing traditional statistical modeling with machine learning approaches to identify important predictors of mortgage approval outcomes.
+
+This project was completed using R and demonstrates applications of network science, regression modeling, regularization methods, feature selection, and statistical interpretation.
 
 ---
 
-## Methods
+# Part 1: Financial Network Analysis
 
-## Part 1: Network Analysis
+## Objective
 
-Network analysis was conducted to examine structural relationships and identify important nodes within weighted and unweighted networks.
+The first analysis examines whether the strength of relationships between companies affects network influence.
 
-Methods used:
+Two versions of a financial trade network were analyzed:
+
+- Weighted network: considers the strength of trade relationships
+- Unweighted network: considers only whether relationships exist
+
+## Methods Used
+
+Network properties analyzed:
 
 - Degree centrality
 - Betweenness centrality
 - Closeness centrality
 - Eigenvector centrality
-- Constraint and brokerage measures
+- Brokerage potential
+- Network constraint
 - Network density
-- Average path distance
+- Average path length
 - Transitivity
-- Community detection using Walktrap clustering
+- Walktrap community detection
 - Modularity analysis
 
-Key questions explored:
+## Questions Explored
 
-- Which nodes are most influential within the network?
-- How does network structure differ between weighted and unweighted representations?
-- Are there identifiable communities within the network?
+- Which companies are most influential within the network?
+- Does including tie strength change measures of importance?
+- Are meaningful communities present within the financial network?
 
 ---
 
-## Part 2: Statistical Modeling
+# Part 2: Mortgage Lending Modeling
 
-Regression models were applied to investigate relationships between predictors and outcomes.
+## Objective
 
-Methods used:
+The second analysis investigates factors associated with mortgage approval decisions using the Boston HMDA mortgage dataset.
 
-- Logistic regression
-- Linear regression
+The goal was to compare traditional statistical modeling with regularized machine learning approaches.
+
+## Dataset
+
+The Boston HMDA dataset contains 2,357 mortgage applications from the greater Boston metropolitan area collected in 1990.
+
+Variables included:
+
+- Applicant characteristics
+- Credit history measures
+- Financial characteristics
+- Housing information
+- Mortgage approval outcome
+
+---
+
+## Models Used
+
+### Logistic Regression
+
+A logistic regression model was estimated to examine relationships between applicant characteristics and mortgage approval outcomes.
+
+---
+
+### Regularized Machine Learning Models
+
+Three cross-validated machine learning models were estimated:
+
+- Ridge Regression
+- LASSO Regression
+- Elastic Net Regression
+
+These models were used to:
+
+- Reduce model complexity
+- Identify important predictors
+- Address multicollinearity
+- Compare variable selection approaches
+
+---
+
+# Bonus Analysis: BMI Modeling
+
+A bonus analysis applied similar regression methods to predict BMI using:
+
+- Multiple linear regression
 - Ridge regression
 - LASSO regression
 - Elastic Net regression
-- Cross-validation using glmnet
-
-Regularization methods were used to:
-
-- Reduce model complexity
-- Improve prediction performance
-- Identify important variables
-- Address potential multicollinearity
 
 ---
 
-## Technologies Used
+# Technologies Used
 
 - R
 - igraph
 - glmnet
 - tidyverse
-- Statistical Modeling
 - Network Analysis
+- Statistical Modeling
 - Machine Learning
+- Regularization Methods
+- Data Visualization
 
 ---
 
-## Repository Structure
+# Repository Structure
+
 
 - network-analysis-and-regularized-modeling.R
 - README.md
