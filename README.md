@@ -124,18 +124,21 @@ A bonus analysis applied similar regression methods to predict BMI using:
 # Repository Structure
 
 
-- network-analysis-and-regularized-modeling.R
+- financial_network_regularized_modeling.R
 - README.md
 
 ---
 
-## Skills Demonstrated
+# Skills Demonstrated
 
-- Statistical modeling
-- Regression analysis
+- Financial network analysis
+- Centrality and community detection
+- Regression modeling
+- Logistic regression
+- Ridge regression
+- LASSO regression
+- Elastic Net modeling
+- Cross-validation
 - Feature selection
-- Regularization techniques
-- Network data analysis
-- Exploratory data analysis
-- Model interpretation
+- Statistical interpretation
 - R programming
