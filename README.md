@@ -73,7 +73,7 @@ Regularization methods were used to:
 
 ## Repository Structure
 
-- network_analysis_regression.R
+- network-analysis-and-regularized-modeling.R
 - README.md
 
 ---
